@@ -21,7 +21,7 @@
 */
 
 
-const vue_app = Vue.createApp({ 
+const vue_app = Vue.createApp({
       // This automatically imports your movies.json file and puts it into
       //   the variable: movies
       created () {
@@ -31,79 +31,70 @@ const vue_app = Vue.createApp({
       },
       data() {
         return {
-
             // This holds your movies.json data.
             movies: [],
             /* ADD ADDITIONAL VARIABLES FOR STEP 3 HERE */
-            //added the values for my variables 
-      title: "IMDB + Alex's Top 8 Movies",
-     owner: 'Alex',
-     github : "https://github.com/523Adambrosio/Movie-Gallery-Starter-Files",
-     
-     
-
+            title: "IMDB + Alex's Top 8 Movies",
+            owner:  "Alex",
+            github:  "https://github.com/523Adambrosio/Movie-Gallery-Starter-Files",
       }
-       
     },
       methods: {
             getMonthText(dateArray){
-                  switch(dateArray[1]) {
+                 let month = ""
+                  switch (dateArray[1]) {
+                  
                         case 1:
-                              month = "January";
-                              break;
+                              month = "January"
+                               break
                         case 2:
-                              Month = "February";
-                              break;
+                              month = "February"
+                              break
                         case 3:
-                              Month = "March";
-                              break;
+                              month = "March"
+                              break
                         case 4:
-                              Month = "April";
-                              break;
-                        case 5:S
-                              month = "May";
-                              break;
+                              month = "April"
+                               break
+                        case 5:
+                              month = "May"
+                              break
                         case 6:
-                              Month = "June";
-                              break;
+                              month = "June"
+                              break
                         case 7:
-                              Month = "July";
-                              break;
+                              month = "July"
+                              break
                         case 8:
-                              Month = "August";
-                              break;
+                              month = "August"
+                               break
                         case 9:
-                              Month = "September";
-                              break;
+                              month = "September"
+                              break
                         case 10:
-                              Month = "October";
-                              break;
+                              month = "October"
+                              break
                         case 11:
-                              Month = "November";
-                              break;
+                              month = "November"
+                               break
                         case 12:
-                              Month = "December";
-                              break;
+                              month = "December"
+                  }
+                  return month +  " " + dateArray[2] + ", " + dateArray[0]
+            },
+            posterClick(movie){
+                  movie.posterindex++
+                  if (movie.posterindex > movie.posters.length - 1){
+		            movie.posterindex = 0
+                  }
+            },
+            timeText(min){
+                  let hours = Math.floor(min / 60)
+                  let minutes = min % 60
+                  return hours + 'h ' + minutes + 'm '
             }
-
-          
             
-            return Month + ' ' + dataArray[2] + ', ' + dataArray[1];
-         
-            /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */
-      },
 
-      timeText(minutes){
-            var h=Math.floor(minutes / 60)
-            var m= minutes % 60
-            return h + ' hours ' + m + ' minutes '
-      },
-      
-
-
-}
-     
-
+      }     
 })
-
 vue_app.mount("#vue_app")
