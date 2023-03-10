@@ -56,17 +56,45 @@
             "posterindex": 0
       },
       {
-            "title": "Schindler's List",
+            "title": "Jumanji",
             "iscore": 8.9,
             "rating": "R",
-            "runtime": 195,
-            "released": [1993, 11, 30],
+            "runtime": 100,
+            "released": [2017, 12, 5],
             "country": "USA",
-            "posters": ["img/schindlerslist.jpg"],
-            "imdb": "http://www.imdb.com/title/tt0108052",
+            "posters": ["img/jumaji.jpg"],
+            "imdb": "https://www.imdb.com/title/tt2283362/",
             "website": "https://www.uphe.com/schindlers-list",
-            "likes": 812,
-            "dislikes": 101,
+            "likes": 921,
+            "dislikes": 124,
+            "posterindex": 0
+      },
+       {
+            "title": "Avatar",
+            "iscore": 8.9,
+            "rating": "R",
+            "runtime": 162,
+            "released": [2009, 12, 18],
+            "country": "USA",
+            "posters": ["img/avatar2.jpg"],
+            "imdb": "https://www.imdb.com/title/tt0499549/",
+            "website": "https://www.uphe.com/schindlers-list",
+            "likes": 854,
+            "dislikes": 98,
+            "posterindex": 0
+      },
+       {
+            "title": "Avengers: Infinity Wars",
+            "iscore": 8.9,
+            "rating": "R",
+            "runtime": 149,
+            "released": [2018, 4, 27],
+            "country": "USA",
+            "posters": ["img/infinitywars2.jpg"],
+            "imdb": "https://www.imdb.com/title/tt4154756/",
+            "website": "https://www.uphe.com/schindlers-list",
+            "likes": 764,
+            "dislikes": 75,
             "posterindex": 0
       }
 ]
